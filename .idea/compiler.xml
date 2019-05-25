@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="vertx-base-sample1" />
+        <module name="vertx-base-sample2" />
       </profile>
     </annotationProcessing>
   </component>

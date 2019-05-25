@@ -11,6 +11,7 @@
 
     <modules>
         <module>vertx-base-sample1</module>
+        <module>vertx-base-sample2</module>
     </modules>
 
     <properties>
