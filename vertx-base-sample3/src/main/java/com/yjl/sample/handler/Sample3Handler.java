@@ -24,7 +24,7 @@ public class Sample3Handler extends BaseRouteV2Handler {
 			routingContext.response().end(jsonObject.put("path", routingContext.request().path()).toBuffer());
 			Future<Void> future = Future.future();
 			future.complete();
-			return Future.future();
+			return future;
 		});
 	}
 }
