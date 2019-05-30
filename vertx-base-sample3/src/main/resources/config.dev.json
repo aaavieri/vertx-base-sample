@@ -1,6 +1,6 @@
 {
   "app": {
-    "port": 4202,
+    "port": 4204,
     "config": {
       "tokenPeriod": 86400
     }
@@ -14,7 +14,7 @@
     "charset": "UTF8"
   },
   "logbackConfig": {
-    "file": "./var/log/sample1.log",
+    "file": "./var/log/sample3.log",
     "level": {
       "root": "DEBUG",
       "com.yjl.vertx.base": "DEBUG",

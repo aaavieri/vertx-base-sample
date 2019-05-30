@@ -14,7 +14,7 @@
     "charset": "UTF8"
   },
   "logbackConfig": {
-    "file": "./var/log/wwx-mini-client.log",
+    "file": "./var/log/sample2.log",
     "level": {
       "root": "DEBUG",
       "com.yjl.vertx.base": "DEBUG",

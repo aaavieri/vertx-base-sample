@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="vertx-base-sample1" />
         <module name="vertx-base-sample2" />
+        <module name="vertx-base-sample3" />
       </profile>
     </annotationProcessing>
   </component>
