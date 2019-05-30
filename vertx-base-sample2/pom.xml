@@ -13,7 +13,7 @@
 
 
     <properties>
-        <main.verticle>com.yjl.sample.vercicle.WebClientVerticle</main.verticle>
+        <main.verticle>com.yjl.sample.vercicle.Sample2Verticle</main.verticle>
     </properties>
 
     <dependencies>
