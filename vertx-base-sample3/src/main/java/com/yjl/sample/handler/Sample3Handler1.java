@@ -12,7 +12,7 @@ import io.vertx.core.json.JsonObject;
 import io.vertx.ext.web.RoutingContext;
 
 @RestRouteV2Handler({@RestRouteMapping(value = "/test/1/:appId", method = HttpMethod.POST), @RestRouteMapping("/test/2")})
-public class Sample3Handler extends BaseRouteV2Handler {
+public class Sample3Handler1 extends BaseRouteV2Handler {
 	
 	@Inject
 	private WxChannelMapper wxChannelMapper;
