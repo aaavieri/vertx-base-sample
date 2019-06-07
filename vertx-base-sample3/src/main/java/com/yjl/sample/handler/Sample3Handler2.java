@@ -14,6 +14,9 @@ import io.vertx.core.json.JsonArray;
 import io.vertx.core.json.JsonObject;
 import io.vertx.ext.web.RoutingContext;
 
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
 @RestRouteV2Handler({@RestRouteMapping(value = "/test/3/:appId", method = HttpMethod.POST), @RestRouteMapping("/test/4")})
 public class Sample3Handler2 extends BaseRouteV2Handler {
 	
@@ -27,7 +30,7 @@ public class Sample3Handler2 extends BaseRouteV2Handler {
 	public Future<Void> handleSuccess(RoutingContext routingContext) {
 		JsonObject params = ContextUtil.getParam(routingContext);
 		Future<JsonObject> channelFuture = this.wxChannelMapper.getChannelInfo(params.getString("appId"));
-		Future<JsonArray> userListFuture = this.wxUserMapper.getAppUserList(params.getString("appId"));
+		Future<JsonArray> userListFuture = this.wxUserMapper.getAppUserList(Stream.of(params.getString("appId")).collect(Collectors.toList()));
 		return CompositeFuture.all(channelFuture, userListFuture).compose(compositeFuture -> {
 			JsonObject channelInfo = compositeFuture.resultAt(0);
 			JsonArray userList = compositeFuture.resultAt(1);
