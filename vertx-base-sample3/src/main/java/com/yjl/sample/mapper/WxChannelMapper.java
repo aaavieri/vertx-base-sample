@@ -11,4 +11,7 @@ public interface WxChannelMapper {
     
     @Select("select wxappID, channelID, wxsecret, barCodeURL, information from t_wxchannel where wxappID = #{appId}")
     Future<JsonObject> getChannelInfo(@Param("appId") String appId);
+    
+    @Select("select channelID from t_wxchannel where wxappID = #{appId}")
+    Future<String> getChannelId(@Param("appId") String appId);
 }
