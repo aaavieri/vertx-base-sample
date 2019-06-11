@@ -12,7 +12,7 @@
     <artifactId>vertx-base-sample1</artifactId>
 
     <properties>
-        <main.verticle>com.yjl.sample.vercicle.Sample1Verticle</main.verticle>
+        <main.verticle>com.yjl.sample.verticle.Sample1Verticle</main.verticle>
     </properties>
 
     <dependencies>

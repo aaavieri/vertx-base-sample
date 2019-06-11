@@ -1,4 +1,4 @@
-package com.yjl.sample.vercicle;
+package com.yjl.sample.verticle;
 
 import com.yjl.vertx.base.com.anno.initializer.ComponentInitializer;
 import com.yjl.vertx.base.com.verticle.InitVerticle;

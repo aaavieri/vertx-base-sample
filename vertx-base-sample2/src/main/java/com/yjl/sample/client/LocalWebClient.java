@@ -19,4 +19,9 @@ public interface LocalWebClient {
 	@RequestData(type = RequestDataType.QUERY_PARAM, key = "appId", paramKey = "a")
 	@AutoRouteIfMethod("testFirst")
 	Future<JsonObject> testFirst(@Param("a") String a);
+	
+	@Request(path = "wxChannel/getChannelInfo", method = HttpMethod.GET)
+	@RequestData(type = RequestDataType.JSON_PARAM, key = "appId", paramKey = "whole", whole = true)
+	@AutoRouteIfMethod(value = "testSecond", route = HttpMethod.POST)
+	Future<JsonObject> testSecond(@Param("whole") JsonObject whole);
 }
